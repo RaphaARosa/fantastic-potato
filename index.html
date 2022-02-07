@@ -4,21 +4,49 @@
 	<meta charset="utf-8">
 	<title>Home</title>
 	<style>
-		.navbar{
-			background-color: black;
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+			border: none;
+			text-decoration: none;
+			text-transform: capitalize;
+			transition: .2s linear;
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+		.header{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 2rem;
+			background-color: #010103;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
 			color: white;
-			list-style-type: none;
 		}
 	</style>
 </head>
 <body>
-	<ul class="navbar">
-		<li>Home</li>
-		<li>Sobre</li>
-		<li>galeria</li>
-		<li>Blog</li>
-		<li>Contatos</li>
-		<li>Entrar</li>
-	</ul>
+	<header class="header">
+		<a href="">
+			<img src="" alt="">
+		</a>
+		<nav class="navbar">
+			<a href="#">Home</a>
+			<a href="#">Sobre</a>
+			<a href="#">galeria</a>
+			<a href="#">Blog</a>
+			<a href="#">Contatos</a>
+		</nav>
+		<div class="icones">
+			<div>;)</div>
+		</div>
+	</header>
 </body>
 </html>
