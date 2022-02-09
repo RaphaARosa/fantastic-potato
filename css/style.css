@@ -42,14 +42,36 @@ html{
 	border-bottom: 2px solid black;
 }
 
-.icones{
+.fa{
 	font-size: 1.5rem;
 	color: #fff;
-	cursor: pointer;
 }
 
 .fa:hover{
 	color: black;
+}
+
+#home{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.home--content{
+	width: 60rem;
+	padding: 3rem;	
+} 
+
+.home--title{
+	text-transform: uppercase;
+	font-size: 6rem;
+}
+
+.home--button{
+	background-color: blueviolet;
+	color: #fff;
+	border: none;
+	padding: 1rem 2rem;
 }
 
 h1{
