@@ -1,3 +1,14 @@
+:root{
+	--shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	--violet: #e2ddda;
+	--green: #c1c48e;
+	--cursive: Lora, serif;
+	--body: Source Sans Pro, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -17,24 +28,27 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 2rem;
-	background-color: blueviolet;
+	padding: 1rem 3rem;
+	background-color: var(--green);
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 1000;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: var(--shadow);
 }
 
 .logo{
 	cursor: pointer;
+	width: 2.5rem;
 }
 
 .navbar a{
 	margin: 0 1rem;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	color: #fff;
+	font-family: var(--body);
+	font-weight: 200;
 }
 
 .navbar a:hover{
@@ -52,28 +66,51 @@ html{
 }
 
 #home{
-	min-height: 100vh;
+	margin-top: 6rem;
+	min-height: calc(100vh - 6rem);
 	display: flex;
 	align-items: center;
+	background-color: var(--violet);
+
 }
 
 .home--content{
 	width: 60rem;
 	padding: 3rem;	
+	font-family: var(--body);
 } 
 
 .home--title{
-	text-transform: uppercase;
-	font-size: 6rem;
+	color: #262229;
+	font-size: 6em;
+  	font-weight: 900;
+  	line-height: 1.1em;
+  	text-transform: uppercase;
+}
+
+.home--text{
+	font-weight: 100;
+	font-size: 1.5rem;
+	color: #262229;
+	font-family: var(--cursive);
+	font-weight: 200;
+	font-style: italic;
+	line-height: 1.1em;
 }
 
 .home--button{
-	background-color: blueviolet;
+	background-color: #c1c48e;
 	color: #fff;
 	border: none;
 	padding: 1rem 2rem;
+	margin-top: 1rem;
+	font-size: 1rem;
 }
 
-h1{
-	color: black;
+.home--image{
+	width: 40rem;
+	height: calc(100vh - 6rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
