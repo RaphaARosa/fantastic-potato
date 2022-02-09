@@ -25,6 +25,11 @@ html{
 	right: 0;
 	z-index: 1000;
 	color: white;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo{
+	cursor: pointer;
 }
 
 .navbar a{
@@ -33,7 +38,17 @@ html{
 	color: #fff;
 }
 
+.navbar a:hover{
+	color: black;
+	border-bottom: 2px solid black;
+}
+
 .icones{
 	font-size: 1.5rem;
 	color: #fff;
+	cursor: pointer;
+}
+
+.fa:hover{
+	color: black;
 }
