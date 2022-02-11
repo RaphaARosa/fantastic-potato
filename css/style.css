@@ -138,9 +138,10 @@ html{
 	clear: both;
 	margin: 0;
 	width: 100%;
+	overflow: hidden;
 }
 
-.galeria--item{
+.galeria--item img{
 	float: left;
 	width: 25%;
 	height: 250px;
@@ -152,10 +153,8 @@ html{
 
 }
 
-.galeria--item:hover {
+.galeria--item:hover img{
     transform: scale(1.2); 
-    display: block;
-	object-fit: cover;
 }
 
 /*----------DESTAQUES----------*/
