@@ -130,6 +130,36 @@ html{
 
 /*----------DESTAQUES----------*/
 
+#galeria{
+}
+
+.galeria--content{
+	display: table;
+	clear: both;
+	margin: 0;
+	width: 100%;
+}
+
+.galeria--item{
+	float: left;
+	width: 25%;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform .3s ease;
+
+}
+
+.galeria--item:hover {
+    transform: scale(1.2); 
+    display: block;
+	object-fit: cover;
+}
+
+/*----------DESTAQUES----------*/
+
 #destaques{
 	background-color: transparent;
 	padding: 2rem;
