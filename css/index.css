@@ -108,7 +108,7 @@
 	height: 250px;
 }
 
-.galeria--item img, .destaques--image img{
+.image-zoom img{
 	width: 100%;
 	transform: scale(1);
 	transition: 0.3s ease-in-out;
@@ -116,7 +116,7 @@
 
 }
 
-.galeria--item:hover img, .destaques--image img:hover{
+.image-zoom:hover img{
     transform: scale(1.2); 
 }
 
@@ -206,6 +206,19 @@
   	margin-top: 6px;
   	margin-bottom: 16px;
   	resize: vertical;
+}
+
+.contato--image{
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	cursor: pointer;
+	display: block;
+}
+
+textarea{
+	max-height: 8rem;
 }
 
 .contato--button{
