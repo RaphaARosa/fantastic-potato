@@ -46,7 +46,7 @@
 	justify-content: center;
 }
 
-/*----------SOBRE----------*/
+/*----------INFO----------*/
 
 #info{
 	height: 10rem;
@@ -54,6 +54,31 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/*----------SOBRE----------*/
+
+#sobre{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5rem 0 0 0;
+}
+
+.sobre--image{
+	width: 50%;
+}
+
+.sobre--image img{
+	width: 50%;
+}
+
+.sobre--info{
+	width: 50%;
+	float: left;
+	padding: 5rem;
+	text-align: justify;
+	line-height: 1.5rem;
 }
 
 /*----------DESTAQUES----------*/
