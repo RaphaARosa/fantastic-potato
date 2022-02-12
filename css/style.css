@@ -1,6 +1,10 @@
 :root{
 	--shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	--violet: #e2ddda;
+	--lavanda: #e2ddda;
+	--violeta: #82617b;
+	--lilas: #bda1b1;
+	--roxo:  #4d394a;
+	--titulo: #262229;
 	--green: #c1c48e;
 	--cursive: Lora, serif;
 	--body: Source Sans Pro, sans-serif;
@@ -21,6 +25,7 @@
 }
 
 html{
+	font-family: var(--body);
 	scroll-behavior: smooth;
 }
 
@@ -49,7 +54,6 @@ html{
 	margin: 0 1rem;
 	font-size: 1.2rem;
 	color: #fff;
-	font-family: var(--body);
 	font-weight: 200;
 }
 
@@ -67,153 +71,6 @@ html{
 	color: black;
 }
 
-/*----------HOME----------*/
-
-#home{
-	margin-top: 6rem;
-	min-height: calc(100vh - 6rem);
-	display: flex;
-	align-items: center;
-	background-color: var(--violet);
-
-}
-
-.home--content{
-	width: 60rem;
-	padding: 3rem;	
-	font-family: var(--body);
-} 
-
-.home--title{
-	color: #262229;
-	font-size: 6em;
-  	font-weight: 900;
-  	line-height: 1.1em;
-  	text-transform: uppercase;
-}
-
-.home--text{
-	font-weight: 100;
-	font-size: 1.4rem;
-	color: #262229;
-	font-family: var(--body);
-	font-weight: 200;
-	line-height: 1.1em;
-}
-
-.home--button{
-	background-color: #c1c48e;
-	color: #fff;
-	border: none;
-	padding: 1rem 2rem;
-	margin-top: 1rem;
-	font-size: 1rem;
-}
-
-.home--image{
-	width: 40rem;
-	height: calc(100vh - 6rem);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-/*----------SOBRE----------*/
-
-#sobre{
-	height: 10rem;
-	background-color: var(--green);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-/*----------DESTAQUES----------*/
-
-#galeria{
-}
-
-.galeria--content{
-	display: table;
-	clear: both;
-	margin: 0;
-	width: 100%;
-	overflow: hidden;
-}
-
-.galeria--item img{
-	float: left;
-	width: 25%;
-	height: 250px;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	cursor: pointer;
-	transition: transform .3s ease;
-
-}
-
-.galeria--item:hover img{
-    transform: scale(1.2); 
-}
-
-/*----------DESTAQUES----------*/
-
-#destaques{
-	background-color: transparent;
-	padding: 2rem;
-}
-
-.destaques--red{
-	display: flex;
-	align-items: center;
-	justify-content: right;
-	padding: 1rem;
-}
-
-.destaques--red p{
-	cursor: pointer;
-}
-
-.destaques--content{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.destaques--card{
-	background-color: var(--violet);
-	border: none;
-	box-shadow: var(--shadow);
-	width: 24%;
-}
-
-.destaques--info{
-	padding: 1rem;
-}
-
-.destaques--image{
-	width: 100%;
-	height: 20rem;
-	background-color: white;
-	background-image: url(../lavanda.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-.destaques--description{
-	color: grey;
-}
-
-.destaques--button{
-	border: none;
-	width: 100%;
-	padding: 1rem 0;
-	background-color: white;
-	cursor: pointer;
-}
-
 /*----------FOOTER----------*/
 
 .footer{
@@ -222,6 +79,10 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.footer--image{
+	width: 5rem;
 }
 
 .links{
@@ -234,7 +95,6 @@ html{
 	margin: 0 1rem;
 	font-size: 1.2rem;
 	color: #fff;
-	font-family: var(--body);
 	font-weight: 200;
 }
 

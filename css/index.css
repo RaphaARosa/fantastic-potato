@@ -1,0 +1,191 @@
+/*----------HOME----------*/
+
+#home{
+	margin-top: 6rem;
+	min-height: calc(100vh - 6rem);
+	display: flex;
+	align-items: center;
+	background-color: var(--lavanda);
+}
+
+.home--content{
+	width: 60rem;
+	padding: 3rem;	
+} 
+
+.home--title{
+	color: var(--titulo);
+	font-size: 6em;
+  	font-weight: 900;
+  	line-height: 1.1em;
+  	text-transform: uppercase;
+}
+
+.home--text{
+	font-weight: 100;
+	font-size: 1.4rem;
+	color: #262229;
+	font-weight: 200;
+	line-height: 1.1em;
+}
+
+.home--button{
+	background-color: var(--violeta);
+	color: #fff;
+	border: none;
+	padding: 1rem 2rem;
+	margin-top: 1rem;
+	font-size: 1rem;
+}
+
+.home--image{
+	width: 40rem;
+	height: calc(100vh - 6rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*----------SOBRE----------*/
+
+#info{
+	height: 10rem;
+	background-color: var(--violeta);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*----------DESTAQUES----------*/
+
+#galeria{
+	padding: 5rem 0;
+}
+
+.galeria--content{
+	display: table;
+	clear: both;
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.galeria--item{
+	float: left;
+	width: 25%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	cursor: pointer;
+	display: block;
+}
+
+.galeria--item img{
+	height: 250px;
+}
+
+.galeria--item img, .destaques--image img{
+	width: 100%;
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
+	display: block;
+
+}
+
+.galeria--item:hover img, .destaques--image img:hover{
+    transform: scale(1.2); 
+}
+
+/*----------DESTAQUES----------*/
+
+#destaques{
+	background-color: transparent;
+	padding: 5rem 2rem;
+	line-height: 1.5rem;
+}
+
+.destaques--red{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	padding: 1rem;
+}
+
+.destaques--red p{
+	cursor: pointer;
+}
+
+.destaques--red p:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.destaques--content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.destaques--card{
+	background-color: var(--lavanda);
+	border: none;
+	box-shadow: var(--shadow);
+	width: 24%;
+}
+
+.destaques--info{
+	padding: 1rem;
+}
+
+.destaques--image{
+	width: 100%;
+	height: 20rem;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	cursor: pointer;
+	display: block;
+}
+
+.destaques--description{
+	color: grey;
+}
+
+.destaques--button{
+	border: none;
+	width: 100%;
+	padding: 1rem 0;
+	background-color: var(--violeta);
+	color: white;
+	cursor: pointer;
+}
+
+/*----------CONTATO----------*/
+
+#contato{
+	padding: 5rem;	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.input{
+	width: 100%;
+	border: 1px solid grey;
+	padding: 0.5rem;
+	font-family: var(--body);
+	font-size: 1rem;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	margin-top: 6px;
+  	margin-bottom: 16px;
+  	resize: vertical;
+}
+
+.contato--button{
+	border: none;
+	padding: 1rem 2rem;
+	background-color: var(--violeta);
+	color: white;
+}
