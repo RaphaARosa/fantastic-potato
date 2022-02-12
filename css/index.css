@@ -52,22 +52,6 @@
 	justify-content: center;
 }
 
-/*----------INFO----------*/
-
-#info{
-	height: 10rem;
-	background-color: var(--violeta);
-	justify-content: center;
-}
-
-.info--button{
-	cursor: pointer;
-	border: none;
-	padding: 1rem 2rem;
-	background-color: white;
-	color: var(--titulo);
-}
-
 /*----------SOBRE----------*/
 
 #sobre{
@@ -96,7 +80,7 @@
 /*----------DESTAQUES----------*/
 
 #galeria{
-	padding: 0.5rem 0;
+	padding: 0.5rem 0 5rem 0;
 }
 
 .galeria--content{
@@ -130,6 +114,22 @@
 
 .image-zoom:hover img{
     transform: scale(1.2); 
+}
+
+/*----------INFO----------*/
+
+#info{
+	height: 10rem;
+	background-color: var(--violeta);
+	justify-content: center;
+}
+
+.info--button{
+	cursor: pointer;
+	border: none;
+	padding: 1rem 2rem;
+	background-color: white;
+	color: var(--titulo);
 }
 
 /*----------DESTAQUES----------*/
