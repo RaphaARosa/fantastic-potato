@@ -64,6 +64,24 @@ html{
 	border-bottom: 2px solid black;
 }
 
+.txtBusca{
+	width: 30%;
+	padding: 0.5rem 1.7rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	background-image: url(../lupa.png);
+	background-position: left;
+	background-size: 1.5rem;
+	background-repeat: no-repeat;
+	border: none;
+	color: rgba(255, 255, 255);
+}
+
+.txtBusca:active, .txtBusca:focus{
+	background-color: rgba(255, 255, 255);
+	background-image: url(../lupa-preta.png);
+	color: black;
+}
+
 .fa{
 	font-size: 1.5rem;
 	color: #fff;
