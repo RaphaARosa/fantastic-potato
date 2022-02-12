@@ -1,10 +1,16 @@
+#home, #sobre, #contato{
+	height: calc(100vh - 6rem);
+}
+
+#home, #info, #sobre, #contato{
+	display: flex;
+	align-items: center;
+}
+
 /*----------HOME----------*/
 
 #home{
 	margin-top: 6rem;
-	min-height: calc(100vh - 6rem);
-	display: flex;
-	align-items: center;
 	background-color: var(--lavanda);
 }
 
@@ -51,30 +57,36 @@
 #info{
 	height: 10rem;
 	background-color: var(--violeta);
-	display: flex;
-	align-items: center;
 	justify-content: center;
+}
+
+.info--button{
+	cursor: pointer;
+	border: none;
+	padding: 1rem 2rem;
+	background-color: white;
+	color: var(--titulo);
 }
 
 /*----------SOBRE----------*/
 
 #sobre{
-	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	padding: 5rem 0 0 0;
+	padding: 0.5rem 0 0 0;
+}
+
+.sobre--image, .sobre--info{
+	width: 50%;
 }
 
 .sobre--image{
-	width: 50%;
-}
-
-.sobre--image img{
-	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-color: var(--titulo);
 }
 
 .sobre--info{
-	width: 50%;
 	float: left;
 	padding: 5rem;
 	text-align: justify;
@@ -84,7 +96,7 @@
 /*----------DESTAQUES----------*/
 
 #galeria{
-	padding: 5rem 0;
+	padding: 0.5rem 0;
 }
 
 .galeria--content{
@@ -188,10 +200,16 @@
 /*----------CONTATO----------*/
 
 #contato{
-	padding: 5rem;	
-	display: flex;
-	align-items: center;
+	padding: 0.5rem 0;	
 	justify-content: space-between;
+}
+
+.contato--info, .contato--image{
+	width: 50%;
+}
+
+.contato--info{	
+	padding: 5rem;
 }
 
 .input{
@@ -201,20 +219,10 @@
 	font-family: var(--body);
 	font-size: 1rem;
 	border: 1px solid #ccc;
-  	border-radius: 4px;
   	box-sizing: border-box;
   	margin-top: 6px;
   	margin-bottom: 16px;
   	resize: vertical;
-}
-
-.contato--image{
-	background-color: white;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	cursor: pointer;
-	display: block;
 }
 
 textarea{
@@ -226,4 +234,11 @@ textarea{
 	padding: 1rem 2rem;
 	background-color: var(--violeta);
 	color: white;
+}
+
+.contato--image{
+	height: 100%;
+	background-color: var(--titulo);
+	margin: 0;
+	padding: 0;
 }
