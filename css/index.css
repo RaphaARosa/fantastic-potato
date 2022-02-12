@@ -225,6 +225,10 @@
   	resize: vertical;
 }
 
+.input:active, .input:focus{
+	border: 2px solid var(--violeta);
+}
+
 textarea{
 	max-height: 8rem;
 }
